@@ -3,6 +3,10 @@
   height: 100%; 
   border: none;
 } 
+#embeddedContent iframe{
+  overflow: hidden;
+} 
+
 
   h1 {
     font-size: 70px;
