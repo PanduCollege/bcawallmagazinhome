@@ -46,7 +46,7 @@ h2 {
     position: absolute;
     top: 0; left: 0; right: 0; bottom: 0;
     display: block;
-    background: url(img/1.jpg) top center;
+    background: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(img/1.jpg) top center;
     background-size: cover;
     transform: translateZ(-1px) scale(2.1);
     min-height: 100%;
@@ -76,7 +76,7 @@ h2 {
     position: absolute;
     top: 0; left: 0; right: 0; bottom: 0;
     display: block;
-    background: url(img/2.jpg) top center;
+    background: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(img/2.jpg) top center;
     background-size: cover;
     transform: translateZ(-.5px) scale(1.6);
     z-index: -1;
@@ -129,6 +129,15 @@ h2 {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+  }
+
+  @media (max-width: 450px) {
+    header h1{
+      font-size: 30px;
+    }
+    .section2 h2{
+      font-size: 20px;
+    }
   }
 
  
