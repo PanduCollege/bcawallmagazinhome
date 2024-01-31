@@ -142,7 +142,7 @@ h2 {
     h3{
       padding-top: 120px;
       bottom: 0;
-      color: black;
+      color: blue;
       text-align: center;
       font-size: 10px;;
       
@@ -176,7 +176,7 @@ h2 {
       align-items: center;
       font-size: 45px;
       padding-top: 12%;
-      padding-left: 10%;
+      padding-left: 15%;
   }
 }
 
