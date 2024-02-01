@@ -1,8 +1,14 @@
-#embeddedContent {
+#embeddedContent1 {
   width: 100%;
   height: 100%; 
   border: none;
 } 
+#embeddedContent2 {
+  width: 100%;
+  height: 100%; 
+  border: none;
+} 
+
 
   h1 {
     font-size: 70px;
@@ -70,6 +76,11 @@ h2 {
     box-shadow: 0 0 20px #333;
     z-index: 1;
   }
+  .section3 {
+    background: #fafafa;
+    box-shadow: 0 0 20px #333;
+    z-index: 1;
+  }
   
   .section2::before {
     content: '';
@@ -103,6 +114,11 @@ h2 {
     transform: translate(-50%, -50%);
     box-shadow: none;
   }
+  .section3 .book{
+    z-index: 3;
+    transform: translate(-50%, -50%);
+    box-shadow: none;
+  }
   
   .section2 h1 {
     transform: translateZ(-.3px) scale(1.3) translate(-39%, -39%);
@@ -110,6 +126,11 @@ h2 {
   }
   
   .section1 .book{
+    z-index: 3;
+    transform: translate(-50%, -50%);
+    box-shadow: none;
+  }
+  .section3 .book{
     z-index: 3;
     transform: translate(-50%, -50%);
     box-shadow: none;
@@ -142,7 +163,7 @@ h2 {
     h3{
       padding-top: 120px;
       bottom: 0;
-      color: blue;
+      color: black;
       text-align: center;
       font-size: 10px;;
       
@@ -152,33 +173,7 @@ h2 {
       text-decoration: none;
       color: orangered;
     }
-  .deep{ 
-    display: block;
   }
-
-  .turn{
-    display: none;
-  }
-}
-@media screen and (orientation:landscape) {
-  .deep{ 
-      display: none;
-  }
-  .turn{
-      display: block;
-  }
-  body{
-      background: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(img/e.jpg) top center;
-  }
-  h1{
-      color: white;
-      text-align: center;
-      align-items: center;
-      font-size: 45px;
-      padding-top: 12%;
-      padding-left: 17%;
-  }
-}
 
  
   
