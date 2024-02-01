@@ -1,58 +1,58 @@
+<!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BCA</title>
-  <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css">
 </head>  
-  <body translate="no">
-    <div class="turn"><h1>Rotate Your Phone😵</h1></div>
-    <div class="deep">
+<body translate="no">
     <header>
-    <h1>Bachelor of Computer Science & Application<br> WALL MAGAZINE</h1>
-  </header>
-  <section class="section1">
-          <div class="book">
-            <div id="embeddedContent"></div>
-            </div>          
+        <h1>Bachelor of Computer Application<br> WALL MAGAZINE</h1>
+    </header>
+    <section class="section1">
+        <div class="book">
+            <div id="embeddedContent1"></div>
+        </div>          
+    </section>
+    <section class="section3">
+      <div class="book">
+          <div id="embeddedContent2"></div>
+      </div>
   </section>
-  <section class="section2">
-    <h2>The journey from a world without technology to the current technical landscape is marked by trasformative milestones. This has brought both ups and downs. In navigating the ups and downs of technological evolution, society witnesses advancement. Each phase brings opportunities for growth and improvement. As we continue forward to our wall magazine themed "Technological Advancument And Global Evolution", the key lies in ensuring that technology serves as a force for positive transformation in our ever-changing world.</h2>
-  </section>
-  <script>
-    // Function to embed content from a different website in mobile view
-    function embedExternalContentMobileView() {
-        // Replace "https://example.com/" with the actual URL
-        var externalUrl = "https://github.com/PanduCollege/bcawallmagazin2023";
+    <section class="section2">
+        <h2>The journey from a world without technology to the current technical landscape is marked by milestones. This has brought transformation in navigating the ups and downs of technological evolution, society witnesses advancement. Each phase brings growth and improvement. As we continue forward to our wall magazine themed "Technological Advancement And Global Evolution", the key lies in ensuring that technology serves as a positive transformation in our ever-changing world.</h2>
+    </section>
+    <script>
+        // Function to embed content from a different website in mobile view
+        function embedExternalContentMobileView(url, containerId) {
+            // Create an iframe element
+            var iframe = document.createElement('iframe');
 
-        // Create an iframe element
-        var iframe = document.createElement('iframe');
+            // Set attributes for the iframe
+            iframe.src = url;
+            iframe.width = "100%";
+            iframe.height = "100%";
+            iframe.frameBorder = "0"; // Remove iframe border
 
-        // Set attributes for the iframe
-        iframe.src = externalUrl;
-        iframe.width = "100%";
-        iframe.height = "100%";
-        iframe.frameBorder = "0"; // Remove iframe border
+            // Set a custom user-agent string to simulate a mobile device
+            iframe.sandbox = "allow-same-origin allow-scripts";
+            iframe.style.border = "none";
+            iframe.style.overflow = "hidden";
+            iframe.style.width = "100%";
+            iframe.style.height = "100%";
 
-        // Set a custom user-agent string to simulate a mobile device
-        iframe.sandbox = "allow-same-origin allow-scripts";
-        iframe.style.border = "none";
-        iframe.style.overflow = "hidden";
-        iframe.style.width = "100%";
-        iframe.style.height = "100%";
+            // Append the iframe to the container element
+            document.getElementById(containerId).appendChild(iframe);
+        }
 
-        // Append the iframe to the container element
-        document.getElementById('embeddedContent').appendChild(iframe);
-    }
-
-    // Call the function to embed content in mobile view when the page loads
-    window.onload = function() {
-        embedExternalContentMobileView();
-    };
-</script>
-<h3>&copy; <a href="https://www.instagram.com/deepjyoti_seal">DeepjyotiSeal</a> & <a href="https://www.instagram.com/kamal_medhi7434">KamalMedhi</a></h3>
-    </div>
-  </body>
-  </html>
-
-  
+        // Call the function to embed content in mobile view for section1
+        window.onload = function() {
+            embedExternalContentMobileView("https://github.com/PanduCollege/bcawallmagazin2023", 'embeddedContent1');
+            // Call the function to embed content in mobile view for section3
+            embedExternalContentMobileView("https://panducollege.github.io/bcawallmagazin/", 'embeddedContent2');
+        };
+    </script>
+    <h3>&copy; <a href="https://www.instagram.com/deepjyoti_seal">DeepjyotiSeal</a> & <a href="https://www.instagram.com/kamal_medhi7434">KamalMedhi</a></h3>
+</body>
+</html>
