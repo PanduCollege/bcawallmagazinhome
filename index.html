@@ -7,6 +7,9 @@
     <link rel="stylesheet" href="styles.css">
 </head>  
 <body translate="no">
+    <div id="loading-spinner">
+        <div class="spinner"></div>
+    </div>
     <div class="turn"><h1>Rotate Your Phone😵</h1></div>
     <div class="deep">
     <header>
@@ -43,6 +46,7 @@
             iframe.style.overflow = "hidden";
             iframe.style.width = "100%";
             iframe.style.height = "100%";
+            iframe.id = "myFrame";
 
             // Append the iframe to the container element
             document.getElementById(containerId).appendChild(iframe);
@@ -53,6 +57,19 @@
             embedExternalContentMobileView("https://panducollege.github.io/bcawallmagazin2023/", 'embeddedContent1');
             // Call the function to embed content in mobile view for section3
             embedExternalContentMobileView("https://panducollege.github.io/bcawallmazagin2021/", 'embeddedContent2');
+        };
+    </script>
+     <script>
+        // Show loading spinner until iframe content is fully loaded
+        const iframe = document.getElementById('myFrame');
+        const loadingSpinner = document.getElementById('loading-spinner');
+
+        // Display loading spinner
+        loadingSpinner.style.display = 'block';
+
+        // Hide spinner when iframe content is loaded
+        iframe.onload = () => {
+            loadingSpinner.style.display = 'none';
         };
     </script>
     <h3>&copy; <a href="https://www.instagram.com/deepjyoti_seal">DeepjyotiSeal</a> & <a href="https://www.instagram.com/kamal_medhi7434">KamalMedhi</a></h3>
